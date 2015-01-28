@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Strona testowa">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="YC">
+        <title>Poznajemy znaczniki</title>
+    </head>
+    <body>
+        W dokumencie HTML może się znaleźć zwykły tekst.
+        Aby wymusić "złamanie" tekstu (przejście do nowej linii
+        możemy użyć znacznika < br /><br />
+        Jak widać ten tekst jest już w nowej linii.<br />
+        Tekst można <u>podkreślić</u>, <i>pochylić</i> i <b>pogrubić</b> a także
+        <s>przekreślony</s>. Służą do tego znaczniki odpowiednio: < u >,  < i >, < b >, < s >.
+        Znaczniki te, tak jak i wszystkie pozostałe można 'osadzać' wewnątrz siebie
+        (łącząc w ten sposób efekty ich działania). Oto przykład:<br />
+        Tej <i><b>tekst jest pochylony i pogrubiony</b></i>.
+        Tej jest <b><s>pogrubiony i przekreślony</s></b>. A ten
+        <i><b><s><u>pogrubiony, pochylony, przekreślony i podkreślony :)</u></s></b></i>.<br />
+        Osadzanie znaczników polega na tym, że wewnątrz jednego znacznika zamieszczamy
+        (w całości) drugi znacznik. Przykładowo:<br />
+        <i><b>Te słowa</b></i> zostały umieszczone w znaczniku < b > osadzonym w znaczniku < i >.<br />
+        Konkretnie:  < i >< b >Te słowa< /b > < /i >.<br />
+        Ważne aby pamiętać, że osadzany znacznik musi być zawarty wewnątrz
+        innego znacznika <b>w całości</b>. Przykładowo poniższe osadzenie jest błędne:<br />
+        < i >< b >Jakiś tekst< /i >< /b ><br />
+        ponieważ znacznik osadzany < b > nie został zamknięty przed
+        zamknięciem znacznika < i >
+        <br /><br />
+
+        <!-- to jest komentarz -->
+        <h1>Wielki nagłówek</h1>
+        <h2>Mniejszy nagłówek</h2>
+        <h3>Jeszcze mniejszy nagłówek</h3>
+        <h4>I jeszcze mniejszy nagłówek</h4>
+
+        <span>Znacznik < span > pozwala modyfikować wygląd wprowadzonego tekstu.
+            Domyślnie jednak nie powoduje on żadnych zauważalnych zmian.
+            Znacznik ten nie jest poprzedzony ani zakończony żadnym marginesem.
+            Przykładowo: To jest zwykły tekst. </span>
+        <span>A tu dalsza część.</span>
+        <p>
+            To jest paragraf. Każdy paragraf jest poprzedzony
+            i zakończony pewnym marginesem. Aby się o tym przekonać
+            wystarczy stworzyć drugi paragraf.
+        </p>
+        <p>
+            To jest drugi paragraf. Jak widać znazlazł się on poniżej pierwszego
+            paragrafu z pewnym "odsunięciem".
+        </p>
+
+    </body>
+</html>
